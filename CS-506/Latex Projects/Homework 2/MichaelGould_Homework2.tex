@@ -1,0 +1,281 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\begin{document}
+
+\title{Homework 2 - Logic}
+\author{Michael Gould\\ 
+CS 506 - Online Foundations of CS}
+ 
+\maketitle
+
+1.
+
+(a) Use a truth-table to show that the follwing propositions are logically equivalent.\\ 
+
+i. $X \rightarrow Y$
+
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  & & X $\rightarrow$ Y & & \\
+\hline 
+T & T &  &  & T\\
+T & F &  &  & F\\
+F & T &  &  & T\\
+F & F &  &  & T\\
+\end{tabular}
+\flushleft
+
+ii. $ \neg Y \rightarrow \neg X$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  &  & & $\neg$ Y $\rightarrow \neg$ X & & & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & T\\
+F & F &  &  &  & T\\
+\end{tabular}
+
+\flushleft
+iii. $\neg (X \wedge \neg Y)$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y & & & & $\neg$(X $\wedge \neg$ Y) &  & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & T\\
+F & F &  &  &  & T\\
+\end{tabular}
+\flushleft
+
+iv. $\neg X \vee Y$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  &  & & $\neg$ X $\vee$ Y &  & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & T\\
+F & F &  &  &  & T\\
+\end{tabular}
+\flushleft
+(b) Use truth-table to show that the following propositions are logically equivalent.\\
+
+i. $X \equiv Y$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  &  & & X $\equiv$ Y &  & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & F\\
+F & F &  &  &  & T\\
+\end{tabular}
+\flushleft
+
+ii. $X \leftrightarrow Y$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  &  & & X $\leftrightarrow$ Y &  & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & F\\
+F & F &  &  &  & T\\
+\end{tabular}
+\flushleft
+
+iii. $(X \rightarrow Y) \wedge (Y \rightarrow X)$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  &  & & $(X \rightarrow Y) \wedge (Y \rightarrow X)$ &  & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & F\\
+F & F &  &  &  & T\\
+\end{tabular}
+\flushleft
+
+iv.$(X \rightarrow Y) \wedge (\neg X \rightarrow \neg Y)$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  &  & & $(X \rightarrow Y) \wedge (\neg X \rightarrow \neg Y)$ &  & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & F\\
+F & F &  &  &  & T\\
+\end{tabular}
+\flushleft
+
+v. $(X \wedge Y) \vee (\neg X \wedge \neg Y)$
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+X & Y &  &  & & $(X \wedge Y) \vee (\neg X \wedge \neg Y)$ &  & \\
+\hline 
+T & T &  &  &  & T\\
+T & F &  &  &  & F\\
+F & T &  &  &  & F\\
+F & F &  &  &  & T\\
+\end{tabular}
+\flushleft
+
+2. Prove that for every interger $n$, $n^2$ is odd \textbf{if and only if} $n$ is odd.\\
+Break the proof in two parts:\\~\\
+(a) Prove that if $n$ is odd, then $n^2$ is odd.\\
+
+Suppose that $n$ is odd.  Then $n = 2k + 1$ for some interger $k$\\
+$$n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$$
+
+Since $k$ is an integer, $k$ is odd.\\~\\
+
+(b) Prove that if $n$ is not odd, then $n^2$ is not odd.\\
+
+Suppose that $n$ is not odd.  Then $n = 2k$ for some integer $k$\\
+$$n^2 = (2k)^2 = 4k^2 = 2(2k^2)$$
+
+Since $k$ is an integer, $k$ is not odd.\\~\\
+
+3. Let $A$ and $B$ be two sets.\\
+(a) Use algebraic method to prove the following set equality.
+$$(A \cup B) - B = A - B$$
+Set Difference Rule
+$$(A \cup B) \cap \overline{B} = A \cap \overline{B}$$
+
+Distributive Law
+$$(A \cap \overline{B}) \cup (B \cap \overline{B} = A \cap \overline{B}$$
+
+Complement Law
+$$(A \cap \overline{B}) \cup (\emptyset) = A \cap \overline{B}$$
+
+Bound Law
+$$A \cap \overline {B} = A \cap \overline{B}$$
+
+
+(b) Prove the following set equality is valid \textbf{if and only if} sets $A$ and $B$ are disjoint.
+$$(A \cup B) - B = A$$
+
+i.In the case of sets A and B being disjointed, the union of said sets would include no initally shared elements, and thus, subtractions of the B set thereafter would result again in and exclusive A set.\\~\\
+
+ii.In the case of sets A and B are not disjointed, there would exist an X $\in (A \cap B)$, and the removal of B from the union of $A \cup B$ would remove element $x$.  Therefore the resulting set would not include all elements of the inital A set.\\~\\
+
+4. Let $S$ be the following implication.  This problem is to find the simplest equivalent form for $\neg S$.
+$$S: (P \rightarrow Q)$$ 
+
+(a) First, use a truth table to show that the following proposition is not equivalent to $\neg S$.
+$$P \rightarrow \neg Q$$
+
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ } | @{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+P & Q & $P \rightarrow Q$ & & $P \wedge \neg Q$ &  &  & \\
+\hline 
+T & T & T &  & T & \\
+T & F & F &  & F & \\
+F & T & T &  & F & \\
+F & F & T &  & F & \\
+\end{tabular}
+\flushleft
+
+(In fact, $\neg S$ cannot be expressed in the form of another implication!)\\~\\
+
+(b) Find an equivalent expression for $\neg S$.  This can be done by first expressing the implication $S$ in terms of \{$\wedge,\vee,\neg$\} operations, and then finding the negation.\\
+
+\center
+\begin{tabular}{@{ }c@{ }@{ }c | c@{ }|@{ }c@{ }@{ }c |@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+P & Q & $P \rightarrow Q$ & & $\neg(P \wedge \neg Q)$ &  & $\neg P \vee Q$ & \\
+\hline 
+T & T & T &  & T & & T\\
+T & F & F &  & F & & F\\
+F & T & T &  & T & & T\\
+F & F & T &  & T & & T\\
+\end{tabular}
+\flushleft
+
+
+
+5. (a) Determine the truth value of each of the following propositions, where the domain of discourse is intergers.  Justify your answers.\\~\\
+
+i.$\forall x \forall y, [x + y = 0]$\\
+This statement is false, because given $x = 0$ every $y > 0$ will not fulfill the conditions of [x + y = 0]\\
+\textbf{Counterexample:} $x = 1$ and $y = 2$, $[1 + 2 \neq 0]$\\~\\
+
+ii. $\exists x \forall y, [x + y = 0]$\\
+This is false because if there exists one $x$, only one $y$ will satisfy the equation, specifically $x = -y$\\~\\
+
+
+
+(b) Express the negation of each of the above propositions in symbolic form.  That is the truth value of each resulting proposition and why.\\~\\
+
+i.$\exists x \exists y, [x + y = 0]$\\
+This statement is true, because there exists one $x$ that is sated by one $y$\\
+\textbf{Example:} $x = -3$ and $y = 3$, $[(-3) + (3) = 0]$\\~\\
+
+ii. $\forall x \exists y, [x + y = 0]$\\
+This statement is true, because for all $x$ there exists only one cooresponding $y$ to make the statement true $y= -x$\\~\\
+
+
+
+6. (a) Determine the truth value of each of the following propositions, where the domain of discourse is real numbers.  Justify your answers.\\~\\
+
+i. $\forall x \forall y, [(x < y) \rightarrow (x^2 < y^2)]$\\
+This statement is false given $x < 0$ and $y$ is $x < y < 0$\\
+\textbf{Example:} $x = -3$, $y = -2$ $[(-3 < -2) \rightarrow (9 < 4)]$\\~\\
+
+ii. $\forall x \exists y, [(x < y) \rightarrow (x^2 < y^2)]$\\
+This statement is true, because for every given $x$, there can always be a $y$ given that the $y = \mid x \mid + 1$\\
+\textbf{Example:} $x = 2$, $y = \mid 2 \mid + 1 = 3$ $[(2 < 3) \rightarrow (4 < 9)]$\\~\\
+
+iii. $\exists x \forall y, [(x < y) \rightarrow (x^2 < y^2)]$\\
+This statement is true because given $x > 0$ all $y$ will fulfill $x^2 < y^2$.\\
+\textbf{Example:} $x = 3$, $y = 4$,  $[(3 < 4) \rightarrow (9 < 16)]$\\~\\
+
+iv. $\exists x \exists y, [(x < y) \rightarrow (x^2 < y^2)]$\\
+This statement is true because given that $x = 2$ and $y = 4$ we meet the criterion.\\
+\textbf{Example:} $x = 2$, $y = 4$,  $[(4 < 16) \rightarrow (4 < 16)]$\\~\\
+
+
+
+7. Let $A(S,C)$ be the propositional function (predicate) "student $S$ who takes course $C$ recieves and $A$ grade."  Let the domain of discourse be the set of NJIT students and courses, respectively.\\
+
+(a)  Express each of the following propositions in symbolic form.\\~\\
+
+i.  There are NJIT students with all A's.\\
+$\exists S \forall C, A(S,C)$\\~\\
+
+ii.  There are NJIT courses that give all A's.\\
+$\forall S \exists C, A(S,C)$\\~\\
+
+iii.  Every NJIT student gets some A's.\\
+$\forall S \forall C, \neg A(S,C)$\\~\\
+
+iv. Every NJIT course gives some A's.\\
+$\forall S \forall C, \neg A(S,C)$\\~\\
+
+v.  There are NJIT students with no A's.\\
+$\exists S, \forall C, \neg A(S,C)$\\~\\
+
+(b)  Express the negation of each of the above propositions, both in words and in symbolic form\\
+
+i.In some courses, every student doesn't get an A
+$\forall S, \exists C, \neg A(S,C)$\\~\\
+
+ii.  There are NJIT courses that give all A's.\\
+Some students in all their courses get no A's
+$\exists S, \forall C, \neg A(S,C)$\\~\\
+
+iii.  Every NJIT student gets some A's.\\
+In some courses, some students get no A's 
+$\exists S, \exists C, A(S,C)$\\~\\
+
+iv. Every NJIT course gives some A's.\\
+A few students get A's in a couple of courses
+$\exists S, \exists C, A(S,C)$\\~\\
+ 
+v.  There are NJIT students with no A's.\\
+All students get A's in all courses!
+$\forall S, \exists C, A(S,C)$\\~\\
+\end {document}
