@@ -5,7 +5,7 @@ import java.lang.Math;
 //CS 505-851
 //314-52-087
 
-public class Main {
+public class MonteCarloPi{
 
 public static void main(String[] args) {
 
