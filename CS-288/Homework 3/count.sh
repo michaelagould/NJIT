@@ -8,11 +8,17 @@ do
 	do
 	case $file in
 			$i*)
-		intList[$i]=$i ##fix to tally
+		let intList[$i]=${intList[$i]}+1 ##fix to tally
 			;;
 	esac
 	let i++
 	done
 done
 
-echo ${intList[@]}
+i=0
+
+while [ $i -lt ${#intList[@]} ]
+do
+	echo $i ${intList[$i]}
+	let i++
+done
