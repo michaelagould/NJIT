@@ -5,23 +5,23 @@ j=0
 temp=0
 count=0
 
-while[ (($count + 1)) -le $# ]
+while [ $(expr $count + 1) -le $# ];
 do
 	intList[$count]=$[$count]
-	((count++))
+	let count++
 done
 
-while [ i -lt ${#intList[@]} ] 
+while [ $i -lt ${#intList[@]} ] 
 do
-	while [ j -lt ((${#intList[@]} - $i - 1)) ] 
+	while [ $j -lt $(expr ${#intList[@]} - $i - 1) ] 
 	do
-		if [ intList[$j] -gt intList[(($j - 1))] ]
+		if [ ${intList[$j]} -gt ${intList[$(expr $j - 1)]} ]
 		then
-			temp = ${intList[j]}
-			intList[j] = ${intList[j+1]}
-			intList[j+1] = $temp
+			temp=${intList[$j]}
+			intList[$j]=${intList[$j+1]}
+			intList[$j+1]=$temp
 		fi
-		((j++))
+		let j++
 	done
-	((i++))
+	let i++
 done
