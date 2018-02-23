@@ -1,16 +1,16 @@
 #!/bin/bash
-filestring=$(ls ~/git/NJIT/CS-288/'Homework 3'/test) ## list from destination folder path
-fileList=($filestring)
+directoryName='./test' ## destination folder
+fileString=$(ls $directoryName) ## string of contents from destination folder path
+fileList=($fileString)
 index=0
 
 for file in ${fileList[@]}
 do
-	if [ -e .test/$1.$2$index ]
+	if [ -e $directoryName/$1$(printf %03d $index).$2 ]
 	then
-		echo this
-		(( index++ ))
+		let index++
 	else 
-		mv ./test/${fileList[$index]} ./test/$1.$2$index ## sets to destination folder
-		(( index++ ))
+		mv $directoryName/${fileList[$index]} $directoryName/$1$(printf %03d $index).$2 ## sets to destination folder
+		let index++
 	fi
 done

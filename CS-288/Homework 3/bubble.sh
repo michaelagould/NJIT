@@ -1,27 +1,25 @@
 #!/bin/bash
 
 i=0
-j=0
+j=1
 temp=0
-count=0
+intList=("$@")
 
-while [ $(expr $count + 1) -le $# ];
+while [ $i -lt $(expr ${#intList[@]} - 1) ] 
 do
-	intList[$count]=$[$count]
-	let count++
-done
-
-while [ $i -lt ${#intList[@]} ] 
-do
-	while [ $j -lt $(expr ${#intList[@]} - $i - 1) ] 
+	limit=$(expr ${#intList[@]} - $i)
+	while [ $j -lt $limit ] 
 	do
-		if [ ${intList[$j]} -gt ${intList[$(expr $j - 1)]} ]
+		if [ ${intList[$j]} -gt ${intList[$(expr $j - 1 )]} ]
 		then
 			temp=${intList[$j]}
-			intList[$j]=${intList[$j+1]}
-			intList[$j+1]=$temp
+			intList[$j]=${intList[$(expr $j - 1 )]}
+			intList[$(expr $j - 1 )]=$temp
 		fi
 		let j++
 	done
 	let i++
+	let j=1
 done
+
+echo ${intList[@]}
