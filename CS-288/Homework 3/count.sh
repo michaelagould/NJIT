@@ -8,7 +8,7 @@ do
 	do
 	case $file in
 			$i*)
-		let intList[$i]=${intList[$i]}+1 ##fix to tally
+		let intList[$i]=${intList[$i]}+1
 			;;
 	esac
 	let i++

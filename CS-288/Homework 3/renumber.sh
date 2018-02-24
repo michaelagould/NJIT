@@ -10,7 +10,7 @@ do
 	then
 		let index++
 	else 
-		mv $directoryName/${fileList[$index]} $directoryName/$1$(printf %03d $index).$2 ## sets to destination folder
+		mv $directoryName/${fileList[$index]} $directoryName/$1$(printf %03d $index).$2
 		let index++
 	fi
 done
