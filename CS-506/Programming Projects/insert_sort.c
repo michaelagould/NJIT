@@ -1,35 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int COMPCOUNT = 0;
 
-int smaller(int *A, int j, int i){
+int smaller(int *A, int i, int j){
 	if(A[j] < A[j-1])
 		COMPCOUNT++;
 	return (A[j] < A[j-1]);
 }
 
-int main(int argc, int *argv[]){
+int main(int argc, char *argv[]){
 
-	//int n = (int)strtol(argv[1])
-	//int input[argv[1]];
+	int input[atoi(argv[1])];
+	int arrayLength = atoi(argv[1]);
 	int i, j, temp, init;
-	int arrayLength = (sizeof(input)/sizeof(input[0]));
-	//int seed = time(NULL);
-	//srand(seed);
-	//for(init = 0; init <= argv[1]; init++)
-	//	input[init] = rand();
-
+	srand(time(NULL));
 	
+	//WORST INPUT
+	//for(init = 0; init <= arrayLength; init++)
+	//	input[init] = arrayLength - init;
+
+	//BEST INPUT
+	//for(init = 0; init <= arrayLength; init++)
+	//	input[init] = init;
+
+	//RANDOM INPUT
+	for(init = 0; init <= arrayLength; init++)
+		input[init] = rand() % 100 + 1;
+	
+	printf("Size of sample:%d\n", arrayLength );
+	//printf("Array before sorting: ");
+	//for(i=0; i < arrayLength; i++)
+	//	printf("%d ", input[i]);
+	//printf("\n");
+
 	for(i = 1; i < arrayLength; i++){
 		j = i;
-		while(j > 0 && smaller(input, j, i)){
+		while(j > 0 && smaller(input, i, j)){
 				temp = input[j];
 				input[j] = input[j-1];
 				input[j-1] = temp;
+		j--;
 		}
 	}
-	printf("%d\n", COMPCOUNT );
-	for(i=0; i < arrayLength; i++)
-		printf("%d ", input[i]);
+	//printf("Array after sorting: " );
+	//for(i=0; i < arrayLength; i++)
+	//	printf("%d ", input[i]);
+	//printf("\n");
+	printf("Number of swaps:%d\n", COMPCOUNT );
 }
