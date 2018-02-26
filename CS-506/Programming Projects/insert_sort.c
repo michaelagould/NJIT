@@ -27,7 +27,7 @@ int main(int argc, char *argv[]){
 
 	//RANDOM INPUT
 	for(init = 0; init <= arrayLength; init++)
-		input[init] = rand() % 100 + 1;
+		input[init] = rand() % 10 + 1;
 	
 	printf("Size of sample:%d\n", arrayLength );
 	//printf("Array before sorting: ");
