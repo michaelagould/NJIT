@@ -5,9 +5,9 @@ j=1
 temp=0
 intList=("$@")
 
-while [ $i -lt $(expr ${#intList[@]} - 1) ] 
+while [ $i -lt $(expr $# - 1) ] 
 do
-	limit=$(expr ${#intList[@]} - $i)
+	limit=$(expr $# - $i)
 	while [ $j -lt $limit ] 
 	do
 		if [ ${intList[$j]} -gt ${intList[$(expr $j - 1 )]} ]

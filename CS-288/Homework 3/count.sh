@@ -16,7 +16,6 @@ do
 done
 
 i=0
-
 while [ $i -lt ${#intList[@]} ]
 do
 	echo $i ${intList[$i]}
