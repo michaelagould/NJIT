@@ -19,7 +19,7 @@ move($n$, A, B, C){\\
 \tab\}\\
 \tab else {\\
 \tab\tab move(n-1, A, C, B)\\
-\tab\tab move disk $n$ from A to C\\
+\tab\tab move disk $n$ from A to B\\
 \tab\tab move(n-1, C, B, A)\\
 \tab\}\\
 
@@ -61,7 +61,48 @@ $F20$ & 2(524287) + 1 = 1,048,575 & & & \\
 \end{tabular}
 \flushleft
 
-\textit{Run your program for two values of n (e.g., 3 and 5).}\\
+\textit{Solve the recurrance formula for f(n)}\\
+
+To solve this recurrane formula, we can observe a pattern from the above shown outputs for the first 20 instances of $n$.  We notice that the growth is exponential and can assume that it also includes some constant as well, leaving us the guess:
+
+$$f(n) = A2^n + b$$
+
+Using the above guess as the hypothesis for our induction, we can start by using the base cases from the recurrance equation
+
+$$f(1) = 1$$
+$$f(1) = 2A + B$$
+
+The first of the above equations is straight from the recurrance equation above, the latter is the solution form we are looking to achieve, therefore the goal is to find $2A + B = 1$
+
+We begin by making our guess the hypothesis and assuming it is correct for some $n /geq 1$:
+
+$$f(n) = A2^n + B$$
+
+Then we must also prove the solution is also correct for $n+1$
+
+$$f(n+1) = A2^{n+1} + B$$
+
+To prove the conclusion, we can start with the recurrance equation with the input $n+1$ and use the hypothesis to substitute in for $f(n)$.  In addition to some distributive law as well we find
+
+$$f(n+1) = 2f(n) + 1$$
+$$f(n+1) = 2(A2^n + B) + 1$$
+$$f(n+1) = A2^{n+1} + (2B + 1)$$
+$$f(n+1) = A2^{n+1} + B$$
+
+The leap in the last step is that of a term by term equaltiy, we will need this equality to help find the constant $B$ which is can now be used in conjunction with our initial equation
+
+$$2B + 1 = B$$
+$$2A + B = 1$$
+
+Using algebra we find that $A = 1$ and $B = -1$ and thus we have the constants to properly fill in the previous guess turned hypothesis
+
+$$f(n) = A2^n + B$$
+
+becomes
+
+$$f(n) = 2^n + 1$$
+
+\textit{Run your program for two values of n.}\\
 
 \center
 \begin{tabular}{@{ }c@{ }@{ }|c c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@c}
