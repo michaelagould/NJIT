@@ -10,14 +10,14 @@ struct Stack
     int top;
     int capacity;
     int* array;
-    int title;
+    char name;
     int fakeTop;
 };
 
-struct Stack* createStack(int name, int capacity)
+struct Stack* createStack(char name, int capacity)
 {
     struct Stack* stack = malloc(sizeof(struct Stack));
-    stack->title = name;
+    stack->name = name;
     stack->capacity = capacity;
     stack->top = 0;
     stack->fakeTop = stack->top;
@@ -44,60 +44,55 @@ int printPop(struct Stack* stack){
     return stack->array[stack->fakeTop--];
 }
 
-void printState(int amount, struct Stack* T1, struct Stack* T2, struct Stack* T3){
+void printState(struct Stack* A, struct Stack* B, struct Stack* C){
 	
-	while(T1->fakeTop != 0)
-		printf("%d ", pop(T1));
+	while(A->fakeTop != 0)
+		printf("%d ", printPop(A));
 	printf("      ");
-	while(T2->fakeTop != 0)
-		printf("%d ", pop(T2));
+	while(B->fakeTop != 0)
+		printf("%d ", printPop(B));
 	printf("      ");
-	while(T3->fakeTop != 0)
-		printf("%d ", pop(T3));
+	while(C->fakeTop != 0)
+		printf("%d ", printPop(C));
 	printf("      ");
-	T1->fakeTop = T1->top;
-	T2->fakeTop = T2->top;
-	T3->fakeTop = T3->top;
+	A->fakeTop = A->top;
+	B->fakeTop = B->top;
+	C->fakeTop = C->top;
 }
 
-void moveAmountStartEndUsing(int amount, struct Stack* T1, struct Stack* T3, struct Stack* T2){
+void moveAmountStartEndUsing(int amount, struct Stack* A, struct Stack* B, struct Stack* C){
 	
 	if(amount == 1){
 		count++;
-		printf("\n%d (Move disc %d from T%d to T%d):", count, amount, T1->title, T3->title);
-		printState(sample, T1, T2, T3);
+		printf("\n%d Move disc %d from %c to %c", count, amount, A->name, B->name);
 	}
 	else{
-		moveAmountStartEndUsing(amount-1, T1, T2, T3);
+		moveAmountStartEndUsing(amount, A, C, B);
 		count++;
-		printf("\n%d (Move disk %d from T%d to T%d):", count, amount, T1->title, T3->title);
-		printState(sample, T1, T2, T3);
-		moveAmountStartEndUsing(amount-1, T2, T3, T1);
-	}
+		printf("\n%d Move disk %d from %c to %c", count, amount, A->name, B->name);
+		moveAmountStartEndUsing(amount, C, B, A);
+		}
 }
 
 int main(int argc, char *argv[]){
 
 	int inputSize = atoi(argv[1]);
-	getchar();
 
-	struct Stack *T1 = createStack(1, inputSize);
-	struct Stack *T2 = createStack(2, inputSize);
-	struct Stack *T3 = createStack(3, inputSize);
+	struct Stack *A = createStack('A', inputSize + 1);
+	struct Stack *B = createStack('B', inputSize + 1);
+	struct Stack *C = createStack('C', inputSize + 1);
 
-	getchar();
-
-	for(i = 0; i <= inputSize; i++){
-		push(T1, i);
+	for(i = inputSize; i > 0; i--){
+		push(A, i);
 	}
-
-	printState(inputSize + 1, T1, T2, T3);
-	//printf("Tower of Hanoi Solver: \n");
-	//printf("Input number of disks (max 6): %d\n", sample);
-	//printf("Inital State:");
-
+	
+	printf("Tower of Hanoi Solver: \n");
+	printf("Input number of disks (max 6): %d\n", inputSize);
+	printf("Inital State:");
+	printState(A, B, C);
 	getchar();
-
-	moveAmountStartEndUsing(inputSize, T1, T3, T2);
+	moveAmountStartEndUsing(inputSize, A, B, C);
+	
 	printf("\n");
+	printState(A, B, C);
 }

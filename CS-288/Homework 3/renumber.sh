@@ -6,6 +6,11 @@ index=0
 
 for file in ${fileList[@]}
 do
+done
+
+
+for file in ${fileList[@]}
+do
 	if [ -e $directoryName/$1$(printf %03d $index).$2 ]
 	then
 		let index++
