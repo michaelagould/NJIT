@@ -1,30 +1,41 @@
 #!/bin/bash
 directoryName='./test' ## destination folder
 fileString=$(ls $directoryName) ## string of contents from destination folder path
-fileList=($fileString)
-index=0
-exception=()
+fileList=($fileString) 
+fileIndex=0
 
 for file in ${fileList[@]}
 do
-	if [ -e $directoryName/$1$(printf %03d $index).$2 ]
+	if [ -e $directoryName/$1$(printf %03d $fileIndex).$2 ]
 	then
-		exception=(${exception[@]} + ${fileList[index]})
-		let index++
-	else
-		let index++
+		exceptions=(${exceptions[@]} + $fileIndex)
 	fi
+	let fileIndex++
 done
 
-index=0
+fileIndex=0
+sem=0
 
 for file in ${fileList[@]}
 do
-	if [ $directoryName/$1$(printf %03d $index).$2 = ${exception[$index]} ]
+	for exception in ${exceptions[@]}
+	do
+		if [ $fileIndex = $exception ]
+		then
+			sem=1
+			break
+		if [ $fileIndex != $exception ]
+		then
+			if [ $exceptionIndex -eq ${#exception[@]} ]
+			then
+				mv $directoryName/$file $directoryName/$1$(printf %03d $fileIndex).$2
+			fi
+		fi
+		fi
+	done
+	if [ $sem != 1 ]
 	then
-		let index++
-	else 
-		mv $directoryName/${fileList[$index]} $directoryName/$1$(printf %03d $index).$2
-		let index++
+		mv $directoryName/$file $directoryName/$1$(printf %03d $fileIndex).$2
 	fi
+	let fileIndex++
 done
