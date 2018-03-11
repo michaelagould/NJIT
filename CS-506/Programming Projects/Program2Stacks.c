@@ -28,7 +28,8 @@ struct Stack* createStack(char name, int capacity)
 void push(struct Stack* stack, int item){
     if (stack->top == stack->capacity)
         return;
-    stack->array[++stack->top] = item;
+    stack->array[stack->top++] = item;
+    //stack->top++;
     stack->fakeTop = stack->top;
 }
 
@@ -66,12 +67,15 @@ void moveAmountStartEndUsing(int amount, struct Stack* A, struct Stack* B, struc
 	if(amount == 1){
 		count++;
 		printf("\n%d Move disc %d from %c to %c", count, amount, A->name, B->name);
+		printf(" Here");
 	}
 	else{
 		moveAmountStartEndUsing(amount-1, A, C, B);
+		printf(" There");
 		count++;
 		printf("\n%d Move disk %d from %c to %c", count, amount, A->name, B->name);
 		moveAmountStartEndUsing(amount-1, C, B, A);
+		printf(" There 2");
 		}
 }
 
