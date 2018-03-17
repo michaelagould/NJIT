@@ -3,7 +3,7 @@
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 \begin{document}
 
-\title{Homework 5 - Functions}
+\title{Program 2 - Tower of Hanoi}
 \author{Michael Gould\\ 
 CS 506 - Online Foundations of CS}
 
@@ -13,7 +13,7 @@ CS 506 - Online Foundations of CS}
 Using pseudo-code, the recursive algorithm to solving the towers of hanoi is as follows:
 
 move($n$, A, B, C){\\
-\tab if(n = 0){\\
+\tab if(n = 1){\\
 \tab\tab move disk $n$ from A to B\\
 \tab\tab end\\
 \tab\}\\
@@ -22,6 +22,8 @@ move($n$, A, B, C){\\
 \tab\tab move disk $n$ from A to B\\
 \tab\tab move(n-1, C, B, A)\\
 \tab\}\\
+
+(See enclosed C program for specific implementation of the algorithm)
 
 \textit{Write a recurrence equation for $f(n)$ and solve the
 recurrence. To get a better appreciation for this time complexity, tabulate $f(n)$ for the values of $n$ from 1

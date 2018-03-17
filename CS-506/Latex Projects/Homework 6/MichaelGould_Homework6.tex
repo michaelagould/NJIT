@@ -1,0 +1,161 @@
+\documentclass[10pt]{article}
+\usepackage{algpseudocode}
+\newcommand\tab[1][.5cm]{\hspace*{#1}}
+\usepackage{amsmath}
+\begin{document}
+
+\title{Homework 6 - Algorithms}
+\author{Michael Gould\\ 
+CS 506 - Online Foundations of CS}
+
+\maketitle
+
+1. \textit{Prove the following polynomial is $\Theta(n^3)$.  That is, prove $T(n)$ is both $O(n^3)$ and $\Omega(n^3)$}
+
+$$T(n) = 2n^3 - 10n^2 + 100n - 50$$
+
+(a) \textit{Prove $T(n)$ is $O(n^3)$: By definition, you must find positibe constants $C_1$ and $n_0$ such that}
+
+$$T(n) \leq C_1n^3, \forall n \geq n_0$$
+
+(b) \textit{Prove $T(n)$ is $\Omega(n^3)$: By definition, you must find positibe constants $C_1$ and $n_0$ such that}
+
+$$T(n) \geq C_1n^3, \forall n \geq n_0$$
+
+2. (a) \textit{Compute and tabulate the following functions for $ n=1,2,4,8,16,32,64$.}
+
+(b) \textit{Order the following complexity functions (growth rates) form the smallest to the largest.}
+
+$$n^2 log n, 5, n log^2 n, 2^n, N^2, N, \sqrt{n} log n, \frac{n}{log n}$$
+
+3. \textit{Find the exact number of times (in terms of $n$) the innnermost statement $(X=X-1)$ is executed in the following code.  That is, find the value of X, then express the total running time in terms of $O(),\Omega(),\Theta()$ as appropriate}
+
+$X = 0;$\\
+  \tab for $k=1$ to $n$\\
+  \tab \tab for $j=1$ to $n-k$\\
+  \tab \tab \tab $X=X+1;$\\
+
+4. \textit{the following program computes and returns $(log_2n)$, assuming the input $n$ is an integer power of 2.  That is $n=2^j$ for some integer $j\geq0$}\\
+\tab int LOG (int $n$)\{\\
+\tab int $m,k$;\\
+\tab $m=n$;\\
+\tab $k=0$;\\
+\tab while ($m>1$) \{\\
+\tab \tab $m=m/2$;\\
+\tab \tab $k=k+1$; \}\\
+\tab return ($k$)\\
+\tab \}
+
+(a) \textit{First trace the execution of this program for a specific input value, $n=16$.  Tabulate the values of $m$ and $k$ at the beginning, just before the first execution of the while loop and after each execution of the while loop.}
+
+(b) \textit{Prove by induction that at the end of each execution of the while loop, the following relation holds between variables $m$ and $k$.
+}
+$$m=\frac{n}{2^k}$$
+
+(c) \textit{Then conclude that at the end, after the last iteration of the while loop, the program returns $k=log_2n$.}
+
+5.\textit{The following pseudocode computes the sum of an array of $n$ integers}\\
+\tab int sum (int $A[]$, int $n$) \{\\
+\tab $T=A[0]$;\\
+\tab for $i=1$ to $n-1$\\
+\tab \tab $T=T+A[i]$;\\
+\tab return $T$;\\
+\tab \}
+
+(a) \textit{Write a recursive version of this code}
+
+(b) \textit{Let $f(n)$ be the number of additions performed by this computation.  Write a recurrance equation for $f(n)$.}
+
+(c) \textit{Prove by induction that the solution of the recurrance is $f(n)=n-1$.}
+
+6. \textit{The following pseudocode finds the maximum element in an array of size n.}\\
+\tab int MAX (int $A[]$, int $n$)\{\\
+\tab $M = A[0]$;\\
+\tab for $i=1$ to $n-1$\\
+\tab \tab if $(A[i] > M)$\\
+\tab \tab \tab $M=A[i]$ //Update the max\\
+\tab return $M$;
+\tab \}
+
+(a) \textit{Write a recursive version of this code}
+
+(b) \textit{Let $f(n)$ be the number of key comparisons performed by this algorithm.  Write a recurrance equation for $f(n)$.}
+
+(c) \textit{Prove by induction that the solution of the recurrance is $f(n)=n-1$.}
+
+7. \textit{Consider the following pseudocode for insertion-sort algorithm.  The algorithm sorts an arbitrary array $A[0..n-1]$ of $n$ elements}\\
+\tab void ISORT(dtype $A[]$, int $n$) \{\\
+\tab int $i,j$;\\
+\tab for $i=1$ to $n-1$ \{\\
+\tab \tab //Insert $A[i]$ in the sorted part $A[0...i-1]$\\
+\tab \tab $j=i$;\\
+\tab \tab while $(j > 0$ and $A[j] < A[j-1])$ \{\\
+\tab \tab \tab SWAP$(A[j],A[j-1])$ \{\\
+\tab \tab \tab $j=j-1$ \}\\
+\tab \tab \tab \}\\
+\tab \tab \}\\
+\tab \}\\
+
+(a) \textit{Illustrate the algorithm on the following array by showing each comparison/swap operation.  What is the total number of comparisons made for this worst-case data?}
+
+$$A=(5,4,3,2,1)$$
+
+(b) \textit{Write a recursive version of this algorithm.}
+
+(c) \textit{Let $f(n)$ be the worst-case number of key comparisons made bt this algorithm to sort $n$ elements.  Write a recurrance equation for $f(n)$}
+
+(d) \textit{Find the solution for $f(n)$ by repeated substition}
+
+8.\textit{Consider the bubble-sort algorithm described below.}\\
+\tab void bubble (dtype $A[]$, int $n$) \{\\
+\tab int $i,j$;\\
+\tab for $(i=n-1$; $i>0$; $i--)$\\
+\tab \tab for$(j=0$; $j<i$; $j++)$\\
+\tab \tab \tab if$(A[j]>A[j+1])$ \tab SWAP($A[j],A[j+1])$;
+\tab \}
+
+(a) \textit{Analyze the time complexity, $T(n)$, of the bubble-sort algorithm.}
+
+(b) \textit{Rewrite the algorithm using recursion}.
+
+(c) \textit{Let $f(n)$ be the worst-case number of key-comparisons used by this algorithm to sort $n$ elements.  Write a recurrance for $f(n)$.  Solve the recurrance by repeated subsititions}
+
+9. \textit{The wollowing algorithm uses a} \textbf{divide-and-conquer} \textit{technique to find the maximum element in an array of size $n$.  The initial call to this recursive function is max(arrayname, 0, n).}\\
+\tab dtype Findmax(dtype $A[]$, int $i$, int $n$)\\
+\tab \{\tab //$i$ is the starting index and $n$ is the number of elements\\
+\tab dtype $Max1,Max2$;\\
+\tab if$(n==1)$ return $A[i]$;\\
+\tab $Max1$ = Findmax$(A,i,\left \lfloor{n/2}\right \rfloor)$;\tab \tab \tab //Find max of the first half\\
+\tab $Max2$ = Findmax$(A,i+\left \lfloor{n/2}\right \rfloor,\left \lceil{n/2}\right \rceil)$;\tab //Find max of the second half\\
+\tab if $(Max1 \geq Max2)$ \tab return $Max1$;\\
+\tab \tab else return $Max2$;\\
+\tab \}
+
+\textit{Let $f(n)$ be the worst-case number of key comparisons for finding the max of $n$ elements}
+
+(a) \textit{Assuming $n$ is a power of 2, write a recurrance relation for $f(n)$.  Find the solution by each of the following methods.}
+
+\tab (i) \textit{Apply the repeated substition method.}
+
+\tab (ii) \textit{Apply induction to prove that $f(n)=An+B$ and find the constants $A$ and $B$.}
+
+(b) \textit{Now consider the general case where $n$ is any integer.  Write a recurrance for $f(n)$.  Use induction to prove that the somution is $f(n)=n-1$}.
+
+10. \textit{The following divide-and-conquer algorithm is designed to return TRUE if and only if all the elements of the array have equal values.  For simplicity, suppose the array size is $n=2^k$ for some integer $k$.  Input $S$ is the starting index and $n$ is the number of elements starting at $S$.  The initial call is SAME$(A,0,n)$.}\\
+\tab Boolean SAME (Int $A[]$, int $S$, int $n$) \{\\
+\tab Boolean $T1,T2,T3$;\\
+\tab if $(n==1)$ return TRUE;\\
+\tab T1 = SAME $(A,S,n/2)$;\\
+\tab T2 = SAME $(A,S+n/2,n/2)$;\\
+\tab T3 = $(A[S] == A[S+n/2])$;\\
+\tab return $(T1 \wedge T2 \wedge T3)$;\\
+\tab \}\\
+(a) \textit{Explain how this program works}
+
+(b) \textit{Prove by induction that the algorithm returns TRUE if and only if all the elements of the array have equal values.}
+
+(c) \textit{Let $f(n)$ be the number of key comparisons in this algorithm for any array of size $n$.  Write a Recurrance for $f(n)$.}
+
+(d) \textit{Find the solutio by repeated subsitition.}
+
+\end{document}
