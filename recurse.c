@@ -8,7 +8,7 @@ int fact(int n){
 	else{
 		printf("Here %d \n", n);
 		n = n * fact(n-1);
-		//printf("Here 2 %d \n", n);
+		printf("Here 2 %d \n", n);
 	}
 }
 
