@@ -1,14 +1,15 @@
-!#/bin/bash
-A=($@)
-
-for((i = 1; i < ${#A[@]}; i++)); 
+arr=($@)
+for((i=1;i<n;i++))
 do
-	key=${A[i]}
-	for((j = i; j > 0; j-- ));
+	j=$i-1
+	echo $j
+	echo "this"
+	temp=${arr[$i]}
+	while((j>=0 && arr[j]>temp))
 	do
-		if [ array[$($j-1)] > array[$j]]
-		then
-			A[j-1]=${A[$j]}
-		fi
+		arr[$j+1]=${arr[$j]}
+		j=$j-1
 	done
+	arr[j+1]=$temp
 done
+echo ${arr[@]}
