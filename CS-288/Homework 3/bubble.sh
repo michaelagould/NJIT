@@ -4,7 +4,6 @@ i=0
 j=1
 temp=0
 intList=("$@")
-
 while [ $i -lt $(expr $# - 1) ] 
 do
 	limit=$(expr $# - $i)
