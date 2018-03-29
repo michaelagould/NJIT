@@ -1,5 +1,8 @@
 #!/bin/bash
-array=($@)
+
+array=($(cat $1))
+
+ts=$(date +%s%N) #START
 for((i = 0; i < ${#array[@]}; i++));
 do
 	mindex=$i
@@ -14,4 +17,5 @@ do
 	array[$mindex]=${array[$i]}
 	array[$i]=$temp
 done
-echo ${array[@]}
+tt=$((($(date +%s%N) - $ts)/1000000)) #END
+echo "Time taken: $tt milliseconds"
