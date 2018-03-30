@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include <math.h>
 
@@ -59,18 +60,39 @@ void mergeSort(int arr[], int l, int r)
     }
 }
 
+int main(int argc, char *argv[]){
+
+    FILE *ifp = NULL;
+    long start, end, total;
+    int i, num, size;
+    size = atoi(argv[1]);
+    int sample[size];
+    
+    ifp = fopen(argv[1], "r");
+    for(i = 0; fscanf(ifp, "%d\n", &num) == 1; i++)
+        sample[i] = num;
+    
+    start = clock();
+    mergeSort(sample, 0, size - 1);
+    end = clock();
+    total = end - start;
+    printf("Total time: %ld\n", total);
+    return 0;
+}
+
+/* random array function
 int main(int argc, char *argv[])
 {
-    long start, end;
-    int i;
+    long start, end, total;
+    int i, size;
     size = atoi(argv[1]);
     int sample[size];
     for(i = 0; i < size-1; i++)
         sample[i] = ((rand() % size) + 1);
     start = clock();
-    printf("Starting of the program, %ld\n", start);
     mergeSort(sample, 0, size - 1);
     end = clock();
-    printf("Time elaplsed: %ld\n", end);
+    total = end - start;
+    printf("Total time: %ld\n", total);
     return 0;
-}
+}*/
