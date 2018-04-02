@@ -63,7 +63,8 @@ void mergeSort(int arr[], int l, int r)
 int main(int argc, char *argv[]){
 
     FILE *ifp = NULL;
-    long start, end, total;
+    long start, end;
+    double total;
     int i, num, size;
     size = atoi(argv[1]);
     int sample[size];
@@ -75,8 +76,8 @@ int main(int argc, char *argv[]){
     start = clock();
     mergeSort(sample, 0, size - 1);
     end = clock();
-    total = end - start;
-    printf("Total time: %ld\n", total);
+    total = (double)(end - start) / CLOCKS_PER_SEC;
+    printf("Total time: %f\n", total);
     return 0;
 }
 

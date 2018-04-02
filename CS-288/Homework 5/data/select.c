@@ -27,7 +27,8 @@ void selectionSort(int arr[], int n)
 int main(int argc, char *argv[]){
 
     FILE *ifp = NULL;
-    long start, end, total;
+    long start, end;
+    double total;
     int i, num, size;
     size = atoi(argv[1]);
     int sample[size];
@@ -40,8 +41,8 @@ int main(int argc, char *argv[]){
     start = clock();
     selectionSort(sample, size);
     end = clock();
-    total = end - start;
-    printf("Total time: %ld\n", total);
+    total = (double)(end - start) / CLOCKS_PER_SEC;
+    printf("Total time (seconds): %f\n", total);
     return 0;
 }
 
