@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="535" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.0.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">2018-04-17T00:15:06.207803145</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.date">2018-04-12T15:00:04.837573276</m>
+<m key="dc.format">application/x-abiword</m>
+<m key="meta:editing-cycles">4</m>
+<m key="meta:editing-duration">PT14M16S</m>
+</metadata>
+<rdf>
+<t  s="styles.xml"  p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  objecttype="1"  xsdtype=""  >http://docs.oasis-open.org/ns/office/1.2/meta/odf#StylesFile</t>
+<t  s="content.xml"  p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  objecttype="1"  xsdtype=""  >http://docs.oasis-open.org/ns/office/1.2/meta/odf#ContentFile</t>
+<t  s="manifest.rdf"  p="http://docs.oasis-open.org/ns/office/1.2/meta/pkg#hasPart"  objecttype="1"  xsdtype=""  >styles.xml</t>
+<t  s="manifest.rdf"  p="http://docs.oasis-open.org/ns/office/1.2/meta/pkg#hasPart"  objecttype="1"  xsdtype=""  >content.xml</t>
+<t  s="manifest.rdf"  p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  objecttype="1"  xsdtype=""  >http://docs.oasis-open.org/ns/office/1.2/meta/pkg#Document</t>
+</rdf>
+<styles>
+<s type="P" name="Normal" props="widows:2; font-size:12pt; dom-dir:ltr; lang:en-US; default-tab-interval:0.4925in; orphans:2; font-family:Liberation Serif"/>
+<s type="P" name="Caption" basedon="Normal" followedby="Caption" props="margin-top:0.0835in; font-size:12pt; margin-bottom:0.0835in; font-style:italic"/>
+<s type="P" name="Heading" basedon="Normal" followedby="Text body" props="margin-top:0.1665in; keep-with-next:yes; margin-bottom:0.0835in; font-family:Liberation Sans; font-size:14pt"/>
+<s type="P" name="Table Heading" basedon="Normal" followedby="Table Heading" props="text-align:center; font-weight:bold"/>
+<s type="P" name="Text body" basedon="Normal" followedby="Text body" props="margin-top:0in; line-height:1.200000; margin-bottom:0.0972in"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="1" props="page-margin-right:0.7874in; page-width:8.5in; page-margin-left:0.7874in; page-orientation:portrait; page-margin-bottom:0.7874in; page-margin-top:0.7874in; page-height:11in">
+<p style="Normal" xid="2" props="text-align:right">Michael Gould</p>
+<p style="Normal" xid="3" props="text-align:right">4/12/18</p>
+<p style="Normal" xid="4" props="text-align:right">CS-288</p>
+<p style="Normal" xid="5" props="text-align:right"><c></c></p>
+<p style="Normal" xid="6" props="text-align:center">Homework 6</p>
+<p style="Normal" xid="7" props="text-align:center"><c></c></p>
+<p style="Normal" xid="8" props="text-align:left">1. 	Initial State – (0,0)</p>
+<p style="Normal" xid="9" props="text-align:left">	Goal States – (0,2),(1,2),(2,2),(3,2)</p>
+<p style="Normal" xid="10" props="text-align:left">	Operators - 	1. Fill red bucket</p>
+<p style="Normal" xid="11" props="text-align:left">			2. Fill green bucket</p>
+<p style="Normal" xid="12" props="text-align:left">			3. Empty red bucket</p>
+<p style="Normal" xid="13" props="text-align:left">			4. Empty green bucket</p>
+<p style="Normal" xid="14" props="text-align:left">			5. Fill red bucket w/ green bucket </p>
+<p style="Normal" xid="15" props="text-align:left">			6. Fill green bucket w/ red bucket </p>
+<p style="Normal" xid="16" props="text-align:left"><c></c></p>
+<p style="Normal" xid="17" props="text-align:left">2.	(Green,Red)</p>
+<table xid="18" props="table-column-props:0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/0.4326in/; table-row-heights:////////////////; table-rel-column-props:4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/4095*/; table-width:6.925in">
+<cell xid="19" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:1; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:0; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="20" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="21" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:2; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:1; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="22" props="text-align:center">0,0</p>
+</cell>
+<cell xid="23" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:3; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:2; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="24" props="text-align:center">0,1</p>
+</cell>
+<cell xid="25" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:4; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:3; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="26" props="text-align:center">0,2</p>
+</cell>
+<cell xid="27" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:5; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:4; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="28" props="text-align:center">0,3</p>
+</cell>
+<cell xid="29" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:6; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:5; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="30" props="text-align:center">0,4</p>
+</cell>
+<cell xid="31" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:7; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:6; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="32" props="text-align:center">1,0</p>
+</cell>
+<cell xid="33" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:8; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:7; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="34" props="text-align:center">1,4</p>
+</cell>
+<cell xid="35" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:9; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:8; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="36" props="text-align:center">2,0</p>
+</cell>
+<cell xid="37" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:10; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:9; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="38" props="text-align:center">2,3</p>
+</cell>
+<cell xid="39" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:11; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:10; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="40" props="text-align:center">2,4</p>
+</cell>
+<cell xid="41" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:12; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:11; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="42" props="text-align:center">3,0</p>
+</cell>
+<cell xid="43" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:13; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:12; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="44" props="text-align:center">3,1</p>
+</cell>
+<cell xid="45" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:14; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:13; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="46" props="text-align:center">3,2</p>
+</cell>
+<cell xid="47" props="left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:15; top-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:14; top-style:solid; right-style:none; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="48" props="text-align:center">3,3</p>
+</cell>
+<cell xid="49" props="right-color:#000000; left-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; top-thickness:0.05pt; right-thickness:0.05pt; top-color:#000000; bot-color:#000000; left-attach:15; top-style:solid; right-style:solid; left-style:solid; left-thickness:0.05pt; bot-attach:1; top-attach:0">
+<p style="Normal" xid="50" props="text-align:center">3,4</p>
+</cell>
+<cell xid="51" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="52" props="text-align:center">0,0</p>
+</cell>
+<cell xid="53" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="54" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="55" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="56" props="text-align:center">x</p>
+</cell>
+<cell xid="57" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="58" props="text-align:center">x</p>
+</cell>
+<cell xid="59" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="60" props="text-align:center">x</p>
+</cell>
+<cell xid="61" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="62" props="text-align:center">x</p>
+</cell>
+<cell xid="63" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="64" props="text-align:center">x</p>
+</cell>
+<cell xid="65" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="66" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="67" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="68" props="text-align:center">x</p>
+</cell>
+<cell xid="69" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="70" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="71" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="72" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="73" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="74" props="text-align:center">x</p>
+</cell>
+<cell xid="75" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="76" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="77" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="78" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="79" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="80" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="81" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:2; top-attach:1">
+<p style="Normal" xid="82" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="83" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="84" props="text-align:center">0,1</p>
+</cell>
+<cell xid="85" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="86" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="87" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="88" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="89" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="90" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="91" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="92" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="93" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="94" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="95" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="96" props="text-align:center">x</p>
+</cell>
+<cell xid="97" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="98" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="99" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="100" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="101" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="102" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="103" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="104" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="105" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="106" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="107" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="108" props="text-align:center">x</p>
+</cell>
+<cell xid="109" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="110" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="111" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="112" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="113" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:3; top-attach:2">
+<p style="Normal" xid="114" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="115" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="116" props="text-align:center">0,2</p>
+</cell>
+<cell xid="117" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="118" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="119" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="120" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="121" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="122" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="123" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="124" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="125" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="126" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="127" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="128" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="129" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="130" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="131" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="132" props="text-align:center">x</p>
+</cell>
+<cell xid="133" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="134" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="135" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="136" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="137" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="138" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="139" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="140" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="141" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="142" props="text-align:center">x</p>
+</cell>
+<cell xid="143" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="144" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="145" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:4; top-attach:3">
+<p style="Normal" xid="146" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="147" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="148" props="text-align:center">0,3</p>
+</cell>
+<cell xid="149" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="150" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="151" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="152" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="153" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="154" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="155" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="156" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="157" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="158" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="159" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="160" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="161" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="162" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="163" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="164" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="165" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="166" props="text-align:center">x</p>
+</cell>
+<cell xid="167" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="168" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="169" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="170" props="text-align:center">x</p>
+</cell>
+<cell xid="171" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="172" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="173" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="174" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="175" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="176" props="text-align:center">x</p>
+</cell>
+<cell xid="177" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:5; top-attach:4">
+<p style="Normal" xid="178" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="179" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="180" props="text-align:center">0,4</p>
+</cell>
+<cell xid="181" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="182" props="text-align:center">x</p>
+</cell>
+<cell xid="183" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="184" props="text-align:center">x</p>
+</cell>
+<cell xid="185" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="186" props="text-align:center">x</p>
+</cell>
+<cell xid="187" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="188" props="text-align:center">x</p>
+</cell>
+<cell xid="189" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="190" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="191" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="192" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="193" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="194" props="text-align:center">x</p>
+</cell>
+<cell xid="195" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="196" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="197" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="198" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="199" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="200" props="text-align:center">x</p>
+</cell>
+<cell xid="201" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="202" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="203" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="204" props="text-align:center">x</p>
+</cell>
+<cell xid="205" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="206" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="207" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="208" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="209" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:6; top-attach:5">
+<p style="Normal" xid="210" props="text-align:center">x</p>
+</cell>
+<cell xid="211" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="212" props="text-align:center">1,0</p>
+</cell>
+<cell xid="213" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="214" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="215" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="216" props="text-align:center">x</p>
+</cell>
+<cell xid="217" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="218" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="219" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="220" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="221" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="222" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="223" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="224" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="225" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="226" props="text-align:center">x</p>
+</cell>
+<cell xid="227" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="228" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="229" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="230" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="231" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="232" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="233" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="234" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="235" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="236" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="237" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="238" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="239" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="240" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="241" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:7; top-attach:6">
+<p style="Normal" xid="242" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="243" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="244" props="text-align:center">1,4</p>
+</cell>
+<cell xid="245" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="246" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="247" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="248" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="249" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="250" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="251" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="252" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="253" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="254" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="255" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="256" props="text-align:center">x</p>
+</cell>
+<cell xid="257" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="258" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="259" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="260" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="261" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="262" props="text-align:center">x</p>
+</cell>
+<cell xid="263" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="264" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="265" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="266" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="267" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="268" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="269" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="270" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="271" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="272" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="273" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:8; top-attach:7">
+<p style="Normal" xid="274" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="275" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="276" props="text-align:center">2,0</p>
+</cell>
+<cell xid="277" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="278" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="279" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="280" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="281" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="282" props="text-align:center">x</p>
+</cell>
+<cell xid="283" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="284" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="285" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="286" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="287" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="288" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="289" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="290" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="291" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="292" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="293" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="294" props="text-align:center">x</p>
+</cell>
+<cell xid="295" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="296" props="text-align:center">x</p>
+</cell>
+<cell xid="297" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="298" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="299" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="300" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="301" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="302" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="303" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="304" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="305" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:9; top-attach:8">
+<p style="Normal" xid="306" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="307" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="308" props="text-align:center">2,3</p>
+</cell>
+<cell xid="309" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="310" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="311" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="312" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="313" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="314" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="315" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="316" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="317" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="318" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="319" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="320" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="321" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="322" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="323" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="324" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="325" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="326" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="327" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="328" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="329" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="330" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="331" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="332" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="333" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="334" props="text-align:center">x</p>
+</cell>
+<cell xid="335" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="336" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="337" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:10; top-attach:9">
+<p style="Normal" xid="338" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="339" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="340" props="text-align:center">2,4</p>
+</cell>
+<cell xid="341" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="342" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="343" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="344" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="345" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="346" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="347" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="348" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="349" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="350" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="351" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="352" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="353" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="354" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="355" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="356" props="text-align:center">x</p>
+</cell>
+<cell xid="357" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="358" props="text-align:center">x</p>
+</cell>
+<cell xid="359" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="360" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="361" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="362" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="363" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="364" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="365" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="366" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="367" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="368" props="text-align:center">x</p>
+</cell>
+<cell xid="369" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:11; top-attach:10">
+<p style="Normal" xid="370" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="371" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="372" props="text-align:center">3,0</p>
+</cell>
+<cell xid="373" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="374" props="text-align:center">x</p>
+</cell>
+<cell xid="375" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="376" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="377" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="378" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="379" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="380" props="text-align:center">x</p>
+</cell>
+<cell xid="381" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="382" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="383" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="384" props="text-align:center">x</p>
+</cell>
+<cell xid="385" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="386" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="387" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="388" props="text-align:center">x</p>
+</cell>
+<cell xid="389" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="390" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="391" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="392" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="393" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="394" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="395" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="396" props="text-align:center">x</p>
+</cell>
+<cell xid="397" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="398" props="text-align:center">x</p>
+</cell>
+<cell xid="399" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="400" props="text-align:center">x</p>
+</cell>
+<cell xid="401" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:12; top-attach:11">
+<p style="Normal" xid="402" props="text-align:center">x</p>
+</cell>
+<cell xid="403" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="404" props="text-align:center">3,1</p>
+</cell>
+<cell xid="405" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="406" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="407" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="408" props="text-align:center">x</p>
+</cell>
+<cell xid="409" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="410" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="411" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="412" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="413" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="414" props="text-align:center">x</p>
+</cell>
+<cell xid="415" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="416" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="417" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="418" props="text-align:center">x</p>
+</cell>
+<cell xid="419" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="420" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="421" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="422" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="423" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="424" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="425" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="426" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="427" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="428" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="429" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="430" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="431" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="432" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="433" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:13; top-attach:12">
+<p style="Normal" xid="434" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="435" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="436" props="text-align:center">3,2</p>
+</cell>
+<cell xid="437" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="438" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="439" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="440" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="441" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="442" props="text-align:center">x</p>
+</cell>
+<cell xid="443" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="444" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="445" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="446" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="447" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="448" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="449" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="450" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="451" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="452" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="453" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="454" props="text-align:center">x</p>
+</cell>
+<cell xid="455" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="456" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="457" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="458" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="459" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="460" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="461" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="462" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="463" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="464" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="465" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:14; top-attach:13">
+<p style="Normal" xid="466" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="467" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="468" props="text-align:center">3,3</p>
+</cell>
+<cell xid="469" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="470" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="471" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="472" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="473" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="474" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="475" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="476" props="text-align:center">x</p>
+</cell>
+<cell xid="477" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="478" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="479" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="480" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="481" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="482" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="483" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="484" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="485" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="486" props="text-align:center">x</p>
+</cell>
+<cell xid="487" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="488" props="text-align:center">x</p>
+</cell>
+<cell xid="489" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="490" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="491" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="492" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="493" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="494" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="495" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="496" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="497" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:15; top-attach:14">
+<p style="Normal" xid="498" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="499" props="bot-style:solid; bot-thickness:0.05pt; right-attach:1; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:0; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="500" props="text-align:center">3,4</p>
+</cell>
+<cell xid="501" props="bot-style:solid; bot-thickness:0.05pt; right-attach:2; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:1; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="502" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="503" props="bot-style:solid; bot-thickness:0.05pt; right-attach:3; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:2; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="504" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="505" props="bot-style:solid; bot-thickness:0.05pt; right-attach:4; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:3; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="506" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="507" props="bot-style:solid; bot-thickness:0.05pt; right-attach:5; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:4; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="508" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="509" props="bot-style:solid; bot-thickness:0.05pt; right-attach:6; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:5; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="510" props="text-align:center">x</p>
+</cell>
+<cell xid="511" props="bot-style:solid; bot-thickness:0.05pt; right-attach:7; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:6; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="512" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="513" props="bot-style:solid; bot-thickness:0.05pt; right-attach:8; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:7; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="514" props="text-align:center">x</p>
+</cell>
+<cell xid="515" props="bot-style:solid; bot-thickness:0.05pt; right-attach:9; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:8; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="516" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="517" props="bot-style:solid; bot-thickness:0.05pt; right-attach:10; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:9; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="518" props="text-align:center"><c></c></p>
+</cell>
+<cell xid="519" props="bot-style:solid; bot-thickness:0.05pt; right-attach:11; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:10; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="520" props="text-align:center">x</p>
+</cell>
+<cell xid="521" props="bot-style:solid; bot-thickness:0.05pt; right-attach:12; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:11; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="522" props="text-align:center">x</p>
+</cell>
+<cell xid="523" props="bot-style:solid; bot-thickness:0.05pt; right-attach:13; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:12; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="524" props="text-align:center">x</p>
+</cell>
+<cell xid="525" props="bot-style:solid; bot-thickness:0.05pt; right-attach:14; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:13; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="526" props="text-align:center">x</p>
+</cell>
+<cell xid="527" props="bot-style:solid; bot-thickness:0.05pt; right-attach:15; left-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:14; left-style:solid; right-style:none; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="528" props="text-align:center">x</p>
+</cell>
+<cell xid="529" props="right-color:#000000; bot-style:solid; bot-thickness:0.05pt; right-attach:16; left-thickness:0.05pt; right-thickness:0.05pt; left-color:#000000; top-style:none; left-attach:15; left-style:solid; right-style:solid; bot-color:#000000; bot-attach:16; top-attach:15">
+<p style="Normal" xid="530" props="text-align:center"><c></c></p>
+</cell>
+</table>
+<p style="Normal" xid="531" props="text-align:left"><c></c></p>
+<p style="Normal" xid="532" props="text-align:left">3.	(0,0)→(0,4)→(3,1)→(0,1)→(1,0)→(1,4)→(3,2)</p>
+<p style="Normal" xid="533" props="text-align:left">	</p>
+<p style="Normal" xid="534" props="text-align:left"><c></c></p>
+<p style="Normal" xid="535" props="text-align:left">4.	Given the process and constraints, it is impossible to get to (2,2) because it is outside of the 	given state space.</p>
+</section>
+</abiword>
