@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>SQL SELECT Statement</title>
+    <title>Weather.CSV</title>
 </head>
 <body>
 <table align="center" border="1">
