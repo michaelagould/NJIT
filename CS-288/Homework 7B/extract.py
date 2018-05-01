@@ -1,7 +1,7 @@
 import sys, xml.dom.minidom
 import csv
 
-filename = "output" + sys.argv[2] + ".csv"
+filename = "output.csv"
 
 with open(filename, 'a') as f:
 	

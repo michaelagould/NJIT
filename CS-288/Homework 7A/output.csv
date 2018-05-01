@@ -1,0 +1,6 @@
+state, city, weather, temperature, humidity, pressure
+NY,New York City,Clear,78F,13%,30.04
+IL,Chicago,Mostly Cloudy,83F,28%,34mph
+TX,Houston,Cloudy,77F,79%,30.02
+AZ,Phoenix,Mostly Clear,73F,31%,29.8i
+FL,Jacksonville,Partly Cloudy,81F,45%,30.26
