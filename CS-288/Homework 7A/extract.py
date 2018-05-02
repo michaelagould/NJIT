@@ -20,12 +20,4 @@ with open(filename, 'a') as f:
 	temperature = heading1_Elements[1].childNodes[0].nodeValue.encode('ascii', 'ignore')
 	humidity = td_Elements[1].childNodes[0].nodeValue.encode('ascii', 'ignore')
 	pressure = td_Elements[5].childNodes[0].nodeValue.encode('ascii', 'ignore')
-
-	#print(state)
-	#print(city)
-	#print(weather)
-	#print(temperature)
-	#print(humidity
-	#print(pressure)
-
 	f.write(",".join([state, city, weather, temperature[:2], humidity[:2], pressure[33:38].strip()]) + "\n")

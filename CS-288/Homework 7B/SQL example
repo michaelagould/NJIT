@@ -5,14 +5,14 @@ CREATE DATABASE demo;
 USE demo
 
 CREATE TABLE book(
-    state  CHAR(10),
+    state  CHAR(2),
     city VARCHAR(64),
     weather VARCHAR(32),
     temperature DECIMAL(3,2)
     humidity DECIMAL(3,2)
     pressure DECIMAL(2,2)
 
-    PRIMARY KEY (city)
+    PRIMARY KEY (state)
 );
 
 INSERT INTO book(isbn, title, price) VALUES('039957557X', 'Typhoon Fury',       29.00);

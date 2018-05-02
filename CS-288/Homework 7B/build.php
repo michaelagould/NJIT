@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Weather.CSV</title>
+    <title>Weather</title>
 </head>
 <body>
 <table align="center" border="1">
@@ -14,7 +14,7 @@
     $cursor = $cnx->query($query);
     while ($row = $cursor->fetch_assoc()) {
         echo '<tr>';
-        echo '<td>' . $row['state'] . '</td><td>' . $row['city'] . '</td><td>' . $row['weather'] . '</td><td>' . $row['temperature'] . '</td><td>' . $row['humidity'] . '</td><td>' . $row['pressure'] '</td>;
+        echo '<td>' . $row['state'] . '</td><td>' . $row['city'] . '</td><td>' . $row['weather'] . '</td><td>' . $row['temperature'] . '</td><td>' . $row['humidity'] . '</td><td>' . $row['pressure'] '</td>';
         echo '</tr>';
     }
 

@@ -8,13 +8,9 @@ CREATE TABLE weather(
     state  CHAR(2),
     city VARCHAR(64),
     weather VARCHAR(32),
-    temperature DECIMAL(3,2),
-    humidity DECIMAL(3,2),
-    pressure DECIMAL(2,2),
+    temperature VARCHAR(3),
+    humidity VARCHAR(3),
+    pressure VARCHAR(5),
 
-    PRIMARY KEY (city)
+    PRIMARY KEY (state)
 );
-
-LOAD DATA INFILE './output.csv' INTO TABLE weather IGNORE 1 LINES;
-	FIELDS TERMINATED BY ","
-	LINES TERMINATED BY "\n"
