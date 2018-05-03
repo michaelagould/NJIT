@@ -6,15 +6,19 @@
 <table align="center" border="1">
 <?php
     $cnx = new mysqli('localhost', 'root', 'mysqlpassword', 'weather');
-
     if ($cnx->connect_error)
         die('Connection failed: ' . $cnx->connect_error);
 
-    $query = 'SELECT * FROM all';
+    $query = 'SELECT * FROM data';
     $cursor = $cnx->query($query);
     while ($row = $cursor->fetch_assoc()) {
         echo '<tr>';
-        echo '<td>' . $row['state'] . '</td><td>' . $row['city'] . '</td><td>' . $row['weather'] . '</td><td>' . $row['temperature'] . '</td><td>' . $row['humidity'] . '</td><td>' . $row['pressure'] '</td>';
+        echo '<td>' . $row['state'] . '</td>
+        <td>' . $row['city'] . '</td>
+        <td>' . $row['weather'] . '</td>
+        <td>' . $row['temperature'] . '</td>
+        <td>' . $row['humidity'] . '</td>
+        <td>' . $row['pressure'] . '</td>';
         echo '</tr>';
     }
 

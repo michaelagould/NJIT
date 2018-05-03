@@ -14,7 +14,9 @@
     $cursor = $cnx->query($query);
     while ($row = $cursor->fetch_assoc()) {
         echo '<tr>';
-        echo '<td>' . $row['isbn'] . '</td><td>' . $row['title'] . '</td><td align="right">' . $row['price'] .'</td>';
+        echo '<td>' . $row['isbn'] . '</td>
+            <td>' . $row['title'] . '</td>
+            <td align="right">' . $row['price'] .'</td>';
         echo '</tr>';
     }
 
