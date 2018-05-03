@@ -11,8 +11,6 @@ AZ Phoenix 33.69 -112.07
 PA Philadelphia 40.08 -75.01 
 FL Jacksonville 30.23 -81.67 )
 
-echo state, city, weather, temperature, humidity, pressure > output.csv
-
 for((i = 0; i < ${#StateList[@]}; i = i + 4)){
 	state=${StateList[$i]};
 	city=${StateList[$i+1]}
@@ -21,8 +19,8 @@ for((i = 0; i < ${#StateList[@]}; i = i + 4)){
 	output=$(date +"%F-%I-%M-%S")-$state
 	wget -O $output.html https://forecast-v3.weather.gov/point/$lat,$long?view=plain
 	java -jar tagsoup-1.2.1.jar --files $output.html
-	python extract.py $output.xhtml $a $state $city
-	#rm $output.html $output.xhtml 
+	python extract.py $output.xhtml $state $city
+	rm $output.html $output.xhtml 
 }
 sleep 5
 done

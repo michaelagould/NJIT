@@ -5,7 +5,7 @@
 <body>
 <table align="center" border="1">
 <?php
-    $cnx = new mysqli('localhost', 'root', 'PASSWORD', 'all');
+    $cnx = new mysqli('localhost', 'root', 'mysqlpassword', 'weather');
 
     if ($cnx->connect_error)
         die('Connection failed: ' . $cnx->connect_error);
