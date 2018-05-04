@@ -1,11 +1,11 @@
 import sys, xml.dom.minidom, mysql.connector
 
 def insert(cursor, a):
-   query = 'INSERT INTO data(state,city,weather,temperature,humidity,pressure) VALUES (%s,%s,%s,%s,%s,%s)'
+   query = "INSERT INTO data (state,city,weather,temperature,humidity,pressure) VALUES (%s,%s,%s,%s,%s,%s)"
    cursor.execute(query, (a[0],a[1],a[2],a[3],a[4],a[5]))
 
 def update(cursor, a):
-        query = 'UPDATE data SET city=%s, weather=%s, temperature=%s, humidity=%s, pressure=%s WHERE state=%s'
+        query = "UPDATE data SET city=%s, weather=%s, temperature=%s, humidity=%s, pressure=%s WHERE state=%s"
         cursor.execute(query, (a[1],a[2],a[3],a[4],a[5],a[0]))
 	
 document = xml.dom.minidom.parse(sys.argv[1])
@@ -28,7 +28,8 @@ data = [state, city, weather, temperature[:2], humidity[:2], pressure[33:38].str
 try:
     cnx = mysql.connector.connect(host='localhost', user='root', password='mysqlpassword', database='weather')
     cursor = cnx.cursor()
-    row = cursor.fetchone();
+    cursor.execute("SELECT * FROM data WHERE state='" + state + "'")
+    row = cursor.fetchone()
     if row is not None:
         update(cursor, data)
         cnx.commit()

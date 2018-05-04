@@ -22,5 +22,5 @@ for((i = 0; i < ${#StateList[@]}; i = i + 4)){
 	python extract.py $output.xhtml $state $city
 	rm $output.html $output.xhtml 
 }
-sleep 5
+sleep 20
 done
